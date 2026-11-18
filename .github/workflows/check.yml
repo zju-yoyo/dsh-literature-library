@@ -1,0 +1,23 @@
+name: check
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      # The repository check has no dependencies: it imports every runtime
+      # module, validates the bundle manifest against its Loader row, and
+      # verifies the locale, icon, and vendored-engine resources.
+      - name: Repository check
+        run: node scripts/check.mjs

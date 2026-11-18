@@ -1,0 +1,21 @@
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Literature library: a page being inspected through a lens, with an AI spark. -->
+  <defs>
+    <linearGradient id="lit-page" x1="15" y1="6" x2="15" y2="30" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7AC2FF" />
+      <stop offset="1" stop-color="#4A65E8" />
+    </linearGradient>
+    <mask id="lit-lens-cut">
+      <rect width="36" height="36" fill="#FFFFFF" />
+      <circle cx="23.4" cy="22.8" r="5.1" fill="#000000" />
+    </mask>
+  </defs>
+  <g mask="url(#lit-lens-cut)">
+    <rect x="6.5" y="6" width="17" height="24" rx="2.6" fill="url(#lit-page)" fill-opacity="0.92" />
+    <path d="M10 12.5H19.5M10 16.5H20.5M10 20.5H17.5M10 24.5H15" stroke="#FFFFFF" stroke-opacity="0.9" stroke-width="1.7" stroke-linecap="round" />
+  </g>
+  <path d="M14 8.5L15.2 11.9L18.6 13.1L15.2 14.3L14 17.7L12.8 14.3L9.4 13.1L12.8 11.9Z" fill="#FFFFFF" fill-opacity="0.95" />
+  <circle cx="23.4" cy="22.8" r="5.1" stroke="#4A65E8" stroke-width="2.2" />
+  <circle cx="23.4" cy="22.8" r="5.1" stroke="#7AC2FF" stroke-opacity="0.55" stroke-width="0.8" />
+  <path d="M27.3 26.7L30.6 30" stroke="#4A65E8" stroke-width="2.4" stroke-linecap="round" />
+</svg>

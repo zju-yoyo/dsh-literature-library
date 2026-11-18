@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Literature library",
+    "description": "Adds a literature library and split-pane reading workspace to DSH. Open Library at the sidebar foot: search arXiv and Crossref, add a result by link, identifier, or a local PDF. The original pages sit on the left and Text / Translate / Summarize / Ask on the right; selecting any text on a page raises a small toolbar that translates it or asks about it, and pages render on demand at standard, high, or maximum density with a local page cache. Papers, PDFs, text, and page images live in <DSH_HOME>/literature, and the agent gets matching literature_search, literature_add, literature_list, literature_read, literature_summarize, literature_ask, and literature_update tools over the same library. Translation, summaries, and Q&A send the paper text or the selected passage to the profile's default model (or to the provider/model in this plugin's row config); search and PDF download need network access, and page rendering uses the local document engine. Turning the plugin off removes the workspace and tools but keeps the stored library and page cache.",
+    "detail": "docs/DETAIL.md"
+  }
+}

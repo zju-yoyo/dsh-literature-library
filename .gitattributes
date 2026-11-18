@@ -1,0 +1,12 @@
+# Normalize line endings for every tracked text file.
+* text=auto eol=lf
+
+# Keep the vendored engine byte-for-byte as shipped.
+vendor/pdf/pdf.mjs -text
+vendor/pdf/pdf.worker.mjs -text
+vendor/pdf/LICENSE -text
+
+# Binary assets.
+*.png binary
+*.jpg binary
+*.webp binary

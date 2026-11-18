@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "文献阅读",
+    "description": "在 DSH 中加入文献库与分屏阅读工作区。通过侧边栏底部的「文献库」打开：检索 arXiv 与 Crossref，按链接、编号或本地 PDF 入库；左侧显示原文页面，右侧是「文本 / 翻译 / 总结 / 提问」。在原文里选中任意文字会弹出小工具栏，可直接翻译或就选中内容提问；页面按需渲染并可切换标准/高清/超清清晰度，渲染结果缓存到本地。文献、PDF、正文与页面缓存保存在 <DSH_HOME>/literature；Agent 同时获得 literature_search、literature_add、literature_list、literature_read、literature_summarize、literature_ask、literature_update 工具，与界面共用同一文献库。翻译、总结、提问会把文献正文或所选文字发送给当前默认模型（或本插件配置行中的 provider/model）；检索、PDF 下载与原文渲染分别需要联网和本机文档引擎。关闭插件会移除界面与工具，但保留已存文献与页面缓存。",
+    "detail": "docs/DETAIL.zh.md"
+  }
+}

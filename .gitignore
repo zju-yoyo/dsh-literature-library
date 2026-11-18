@@ -1,0 +1,21 @@
+# Node
+node_modules/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Local runtime data (the plugin keeps its library under DSH_HOME, never here)
+data/
+library.json
+pdfs/
+texts/
+pages/
+.credentials*
+*.tmp
+
+# Editor and OS noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

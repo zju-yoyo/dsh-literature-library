@@ -1,0 +1,58 @@
+{
+  "name": "dsh-literature-library",
+  "version": "0.2.0",
+  "description": "A DSH plugin for reading, translating, summarizing, and questioning papers in a built-in literature library",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "literature",
+    "papers",
+    "arxiv",
+    "zotero",
+    "pdf",
+    "translation",
+    "research"
+  ],
+  "type": "module",
+  "license": "MIT",
+  "author": "literature-library contributors",
+  "homepage": "https://github.com/zju-yoyo/dsh-literature-library#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zju-yoyo/dsh-literature-library.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zju-yoyo/dsh-literature-library/issues"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib",
+    "vendor/pdf",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "THIRD-PARTY.md"
+  ],
+  "scripts": {
+    "check": "node scripts/check.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}
